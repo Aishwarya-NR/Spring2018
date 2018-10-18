@@ -45,22 +45,36 @@
       
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
-	<h1>Interactive Data Science Project Exploratory Analysis Byte Example</h1>
-        <p>This is the Exploratory Analysis Byte of the Interactive Data Science class.</p>
+	<h1>Interactive Data Science Project Byte 4b: Visual Narrative of a Mobile Data Set </h1>
+        <p>
+        This byte uses data that was collected by the AWARE framework enabled on my mobile phone. <br> I chose to focus on the attributes Battery Charge and Discharge since I noticed Interesting patterns <br>
+        My question: What are the typical battery percentages on my mobile phone during charge and discharge? <br>
+       
+        
+        
+        
+        
+        
+        </p>
       </div>
+
+
+      <!--
       
       <div class="page-header">
 	
-      </div> <!-- /page-header -->
-    </div> <!-- /container -->
-    
+      </div>
+    </div>
+      <h1> Public and Government Debt for countries in Europe (2012-2014)</h1>
+      <br>
+      <br>
     <div class="button-toolbar" role="toolbar" id="headers" name="headers">
       {% for column in columns %}
       <button type="button" class = "btn-space btn btn-info" id="{{column}}" onclick="updateTable('{{column}}')">{{column}}</button>
       {% endfor %}
     </div>
     
-    <!--
+  
     <div id="animals"><table id="data" class="table table-striped table-hover">
 	<thead class ="thead-inverse">
 	  <tr id="cols">
@@ -68,34 +82,18 @@
 	</thead>
 	<tbody id="rows"> 
 	</tbody>
-    </table></div>
-  -->
-  
-  <div class="table-responsive">
-    <table class="table table-striped table-hover">
-      <thead class="thead-inverse">
-       <tr id="cols">
-    {% for item in columns %}
-             <th>{{ item }}</th>
-    {% endfor %}
-         </tr>
-        </thead>
-        <tbody id="rows">
-    {% for row in rows %}
-         <tr>
-      {% for datum in row %}
-                <td>{{ datum }} </td>
-      {% endfor %}
-         </tr>
-    {% endfor %}
-        </tbody>
-     </table>
-  </div>
-  
-  
+	    </table></div> -->
+
+
+
+
+
+
+
+
+
     <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+	    ================================================== -->
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
@@ -188,5 +186,36 @@
 				   
 				   
 </script>
-</body>
+
+<h1> Battery Charge Statistics</h1>
+
+<div class='tableauPlaceholder' id='viz1539816922063' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_2_21&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book2_2_21&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_2_21&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1539816922063');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.60)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+
+<h2><u> Description</u> </h2>
+<p> 
+The above bar chart depicts average battery charge statistics over a period of 14 days during which the data was collected. I've chosen to use double bar charts as my visualization since they provide
+a comparison between battery percentage before and after it was charged. The y-axis represents battery start/end percentages and the x-axis represents the day number. Some interesting patterns were observed. For instance, most of my battery charge end percentages are 100% since I charge my phone 
+over the night for about 4-5 hours. Also, the bar chart shows that many a times, I charge my phone only when it's almost dead (Evident from low battery start percentages).
+
+
+</p>
+
+<br>
+<br>
+
+
+<h1>Battery Discharge Statistics</h1>
+<div class='tableauPlaceholder' id='viz1539817014175' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book11_655&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book11_655&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book11_655&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1539817014175');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.60)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<h2><u> Description</u> </h2>
+<p>
+This double bar chart illustrates average battery discharge statistics over a period of 14 days, again the choice of the double bar chart was to aid battery perentage comparisons before and after discharge.
+Some notable observations are that most of the times, my phone starts off with a 100% full battery and the next charge cycle doesn't happen until it is almost out of battery, also on the 14th day, interestingly, I haven't used my phone at all!
+
+</p>
+<br>
+<br>
+
+  </body>
 </html>

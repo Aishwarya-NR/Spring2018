@@ -46,27 +46,29 @@
       <!-- Main jumbotron for a primary marketing message or call to action -->
       <div class="jumbotron">
 	<h1>Quality: About This Data Set</h1>
-        <p>Write a brief summary about the quality of the data set here</a></p>
+
       </div>
 
     
       <div class="page-header">
 	<h2>Is the data complete?</h2>
-	<p>If not, what is missing and what concerns does it raise?
-	What is your evidence for this?</p>
+	<p>
+	Yes, the data consists of average battery charge/discharge statistics for 14 days and it was collected for each day and synced properly. Hence the data is complete without any missing fields.
+	</p>
       </div>
       
       <div class="page-header">
 	<h2>Is the data coherent?</h2>
-	<p>Does it make sense relative to itself? Does it match your
-	expectations? Are the distributions sensible? What is your
-	evidence for this?</p>
+	<p> The data is coherent in the sense that all values are tightly associated with the main goal of the table, however, to answer my question, I tweaked a few parameters, for instance, I did a group by based on time stamp and found average for each day to make more sense from the data. I used SQL queries to do so.</p>
       </div>
 
       <div class="page-header">
 	<h2>Is the data correct?</h2>
-	<p>What aspects of this data can you verify? How did you do so? What did
-	you find?</p>
+	<p> 
+	Yes, the data is correct since AWARE is a well tested framework and it collects accurate realtime results.
+
+	</p>
+
       </div>
 
     </div> <!-- /container -->
